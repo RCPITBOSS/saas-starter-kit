@@ -12,7 +12,7 @@ const projects: Project[] = [
     description:
       'Full-stack SaaS template featuring complete auth system, user profiles, and protected routes. Modern stack with Next.js, TypeScript, and Supabase.',
     tech: ['Next.js', 'React', 'TypeScript', 'Supabase', 'Tailwind CSS'],
-    image: 'https://placehold.co/1200x800/f5f5f5/6B7280?text=SaaS+Starter+Kit',
+    image: '/images/saas-starter.jpg',
     githubUrl: 'https://github.com/RCPITBOSS',
   },
 ];

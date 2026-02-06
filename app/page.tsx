@@ -10,7 +10,7 @@ const featuredProject = {
   description:
     'Full-stack SaaS template featuring complete auth system, user profiles, and protected routes. Modern stack with Next.js, TypeScript, and Supabase.',
   tech: ['Next.js', 'React', 'TypeScript', 'Supabase', 'Tailwind CSS'],
-  image: 'https://placehold.co/1200x800/f5f5f5/6B7280?text=SaaS+Starter+Kit',
+  image: '/images/saas-starter.jpg',
   githubUrl: 'https://github.com/RCPITBOSS',
 };
 
@@ -44,7 +44,7 @@ export default function HomePage() {
           </div>
           <div className="relative h-64 w-64 shrink-0 overflow-hidden rounded-full bg-muted md:h-80 md:w-80">
             <Image
-              src="https://placehold.co/400x400/f5f5f5/6B7280?text=BG"
+              src="/images/headshot.png"
               alt="Brian Greenbaum"
               fill
               className="object-cover"

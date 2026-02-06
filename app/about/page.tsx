@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -27,6 +28,28 @@ export default function AboutPage() {
         <p className="text-lg text-muted-foreground">
           Next.js &bull; React &bull; TypeScript &bull; Supabase &bull; Tailwind CSS
         </p>
+      </div>
+
+      <div className="mt-16">
+        <h2 className="text-5xl font-bold tracking-tight">Beyond Code</h2>
+        <p className="mt-10 text-lg leading-relaxed text-muted-foreground">
+          When I&apos;m not building, I&apos;m capturing creative perspectives through LEGO
+          photography. It&apos;s taught me composition, lighting, and how small details create big
+          impact.
+        </p>
+        <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {['/images/lego1.jpg', '/images/lego2.jpg', '/images/lego3.jpg'].map((src) => (
+            <a key={src} href={src} target="_blank" rel="noopener noreferrer">
+              <Image
+                src={src}
+                alt="LEGO photography by Brian Greenbaum"
+                width={400}
+                height={400}
+                className="rounded-lg object-cover"
+              />
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );
